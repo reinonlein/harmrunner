@@ -8,28 +8,18 @@
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
 </head>
-<style>
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-  }
-</style>
 
 <body>
-  <div id="unity-container" style="width: 100vw; height: 100vh"></div>
-  <canvas id="unity-canvas" width=auto height=auto tabindex="-1"></canvas>
-  <div id="unity-loading-bar">
-    <div id="unity-logo"></div>
-    <div id="unity-progress-bar-empty">
-      <div id="unity-progress-bar-full"></div>
+  <div id="unity-container" style="height: 100%; width: 100%;">
+    <canvas id="unity-canvas" width=auto height=auto tabindex="-1"></canvas>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
     </div>
-  </div>
-  <!-- <div id="unity-warning"> </div> -->
-  <!-- <div id="unity-footer">
+    <!-- <div id="unity-warning"> </div>
+      <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Royal Run</div>
@@ -64,12 +54,12 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/harmrunner.loader.js";
+    var loaderUrl = buildUrl + "/harm_runner.loader.js";
     var config = {
       arguments: [],
-      dataUrl: buildUrl + "/harmrunner.data",
-      frameworkUrl: buildUrl + "/harmrunner.framework.js",
-      codeUrl: buildUrl + "/harmrunner.wasm",
+      dataUrl: buildUrl + "/harm_runner.data",
+      frameworkUrl: buildUrl + "/harm_runner.framework.js",
+      codeUrl: buildUrl + "/harm_runner.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "Royal Run",
@@ -110,8 +100,6 @@
 
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-      // canvas.style.width = "960px";
-      // canvas.style.height = "600px";
       canvas.style.width = "100%";
       canvas.style.height = "100%";
     }

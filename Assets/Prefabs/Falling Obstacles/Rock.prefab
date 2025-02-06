@@ -4969,11 +4969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7573954498950967994, guid: 7fc7d37b4a28f496d92d95d9d602ec77, type: 3}
       propertyPath: m_Interpolate
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7573954498950967994, guid: 7fc7d37b4a28f496d92d95d9d602ec77, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9074914616112326322, guid: 7fc7d37b4a28f496d92d95d9d602ec77, type: 3}
       propertyPath: m_Name
@@ -5110,6 +5110,7 @@ MonoBehaviour:
   collisionParticleSystem: {fileID: 6091645320685049604}
   boulderSmashAudioSource: {fileID: 720259542738616227}
   shakeModifier: 10
+  collisionCooldown: 1
 --- !u!82 &720259542738616227
 AudioSource:
   m_ObjectHideFlags: 0
